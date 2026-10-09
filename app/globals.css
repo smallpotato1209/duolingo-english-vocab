@@ -1,0 +1,43 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --duolingo-green: #58cc02;
+  --duolingo-green-dark: #46a302;
+  --duolingo-green-soft: #d7f7c4;
+  --duolingo-yellow: #ffc800;
+  --duolingo-red: #ff4b4b;
+  --duolingo-blue: #1cb0f6;
+  --duolingo-ink: #3c3c3c;
+  --duolingo-muted: #6b7280;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+  color: var(--duolingo-ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.duo-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(22, 22, 22, 0.08);
+}
+
+@media (max-width: 768px) {
+  .duo-card {
+    border-radius: 1.25rem;
+  }
+}
